@@ -29,14 +29,14 @@ with open(chat_file, encoding="utf-8") as f:
 
         # Check for image references like <anexo: filename.jpg>
         if "<anexo:" in line:
-            start = line.find("<anexo:") + len("<anexo:")
+            start = line.find("<attachment:") + len("<attachment:")
             end = line.find(">", start)
             img_file = line[start:end].strip()
             img_path = os.path.join(os.path.dirname(chat_file), img_file)
 
             # Add image if file exists
             if os.path.exists(img_path):
-                doc.add_paragraph(line[:line.find("<anexo:")].strip())
+                doc.add_paragraph(line[:line.find("<attachment:")].strip())
                 insert_image(doc, img_path)
             else:
                 doc.add_paragraph(f"[Missing image: {img_file}]")
