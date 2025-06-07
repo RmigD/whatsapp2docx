@@ -86,7 +86,7 @@ Images must exist in the same folder as chat.txt.
 
 If an image is missing or unreadable, a placeholder message is added to the document.
 
-Only image references in the format <anexo: filename.ext> are parsed and embedded.
+Only image references in the format <attachment: filename.ext> are parsed and embedded. Note that the word "attachment" will show up in the language your phone is set for, so make sure to update the code to suit your language.
 
 
 
