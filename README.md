@@ -66,6 +66,7 @@ python script.py
 
 [12/05/2024, 14:03] John: Here's the file
 <attachment: image001.jpg>
+
 [12/05/2024, 14:04] Jane: Got it, thanks!
 
 
